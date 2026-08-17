@@ -1,7 +1,7 @@
 # core/config.py
 
 DEFAULT_EXTRACTION_RATIO = 0.28
-DEFAULT_GROQ_MODEL = "groq/llama-3.3-70b-versatile"
+DEFAULT_GROQ_MODEL = "openrouter/meta-llama/llama-3.3-70b-instruct"
 DEFAULT_HF_IMAGE_MODEL = "black-forest-labs/FLUX.1-schnell"
 HF_INFERENCE_BASE_URL = "https://api-inference.huggingface.co/models"
 

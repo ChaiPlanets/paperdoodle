@@ -7,6 +7,8 @@ import tempfile
 import streamlit as st
 from dotenv import load_dotenv
 from PIL import Image
+import litellm
+litellm.drop_params = True
 
 load_dotenv()
 
@@ -61,7 +63,7 @@ with st.sidebar:
     model_string = st.text_input("LiteLLM Model ID", value=model_defaults[llm_provider])
     
     env_keys = {
-        "Groq": os.getenv("GROQ_API_KEY", "").strip(),
+        "Groq": os.getenv("OPENROUTER_API_KEY", "").strip(),
         "OpenAI": os.getenv("OPENAI_API_KEY", "").strip(),
         "Google Gemini": os.getenv("GEMINI_API_KEY", "").strip(),
         "Anthropic": os.getenv("ANTHROPIC_API_KEY", "").strip()
