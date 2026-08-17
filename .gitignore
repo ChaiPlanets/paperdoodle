@@ -1,0 +1,20 @@
+# Environment & Secrets
+.env
+.env.*
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Test & Temp Outputs
+test_downloads/
+output/
+design/
+extra/

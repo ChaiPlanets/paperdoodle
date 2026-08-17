@@ -1,0 +1,33 @@
+# --- Core Framework & Web UI ---
+streamlit 
+
+# --- Document Parsing & Processing ---
+docling 
+pypdf
+
+# --- Extractive Summarization ---
+sumy 
+nltk 
+
+# --- LLM & Generative Inference APIs ---
+groq 
+langchain_groq
+huggingface-hub 
+torch
+transformers
+diffusers
+litellm
+
+# --- Markdown & PDF Compilation ---
+markdown 
+weasyprint 
+
+# --- Visualization & Utilities ---
+pillow 
+ipywidgets
+dotenv
+requests
+python-pptx
+hf-transfer
+fastapi[standard]
+python-multipart
