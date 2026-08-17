@@ -13,6 +13,8 @@ import os
 os.environ["TORCH_COMPILE_DISABLE"] = "1"
 os.environ["TORCHDYNAMO_DISABLE"] = "1"
 
+
+
 # Your original imports follow below...
 import torch
 from diffusers import AutoPipelineForText2Image
@@ -39,6 +41,7 @@ def extract_pdf_content(
     extracted_figures = []
     
     pipeline_options = PdfPipelineOptions()
+    pipeline_options.do_ocr = False
     pipeline_options.generate_picture_images = extract_figures
     if extract_figures:
         pipeline_options.images_scale = 1.5
